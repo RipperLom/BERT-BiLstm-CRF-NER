@@ -1,7 +1,12 @@
 bert-base-ner-train -data_dir  C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/data_set -output_dir C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/model -init_checkpoint C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/bert_model.ckpt -bert_config_file C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/bert_config.json -vocab_file C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/vocab.txt
 
 
-bert-base-ner-train -data_dir  C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/data_set -output_dir C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/model -init_checkpoint C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/bert_model.ckpt -bert_config_file C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/bert_config.json -vocab_file C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/vocab.txt
+bert-base-ner-train
+ -data_dir  C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/data_set
+  -output_dir C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/model
+   -init_checkpoint C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/bert_model.ckpt
+    -bert_config_file C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/bert_config.json
+     -vocab_file C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert/vocab.txt
 
 bert-base-serving-start -model_dir C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/model -bert_model_dir  C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert -mode NER
 bert-base-serving-start -model_dir C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/model -bert_model_dir  C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/bert -model_pd_dir C:\Users\RipperAaron\Desktop\BERT-BiLstm-CRF-NER/model_pd -mode NER
