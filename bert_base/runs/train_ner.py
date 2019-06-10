@@ -17,4 +17,4 @@ if True:
 
     
 os.environ['CUDA_VISIBLE_DEVICES'] = args.device_map
-train(args=args)
+# train(args=args)
