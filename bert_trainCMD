@@ -1,0 +1,7 @@
+bert-base-ner-train -data_dir  /Users/chenxuejiao/Desktop/trial/data_set -output_dir /Users/chenxuejiao/Desktop/trial/model -init_checkpoint /Users/chenxuejiao/Desktop/trial/bert/bert_model.ckpt -bert_config_file /Users/chenxuejiao/Desktop/trial/bert/bert_config.json -vocab_file /Users/chenxuejiao/Desktop/trial/bert/vocab.txt
+
+bert-base-serving-start -model_dir /Users/chenxuejiao/Desktop/trial/model -bert_model_dir  /Users/chenxuejiao/Desktop/trial/bert -mode NER
+bert-base-serving-start -model_dir /Users/chenxuejiao/Desktop/trial/model -bert_model_dir  /Users/chenxuejiao/Desktop/trial/bert -model_pd_dir /Users/chenxuejiao/Desktop/trial/model_pd -mode NER
+
+
+bert-base-serving-start -model_pd_dir /Users/chenxuejiao/Desktop/trial/model_pd -bert_model_dir /Users/chenxuejiao/Desktop/trial/bert -model_dir /Users/chenxuejiao/Desktop/trial/model -mode NER
