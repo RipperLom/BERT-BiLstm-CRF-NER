@@ -559,12 +559,20 @@ def train(args):
         tf.logging.info("  Batch size = %d", args.batch_size)
         tf.logging.info("  Num steps = %d", num_train_steps)
 
+        print("***** Running training *****")
+        print("  Num examples = ", len(train_examples))
+        print("  Batch size = ", args.batch_size)
+        print("  Num steps = ", num_train_steps)
+
         eval_examples = processor.get_dev_examples(args.data_dir)
 
         # 打印验证集数据信息
         tf.logging.info("***** Running evaluation *****")
         tf.logging.info("  Num examples = %d", len(eval_examples))
         tf.logging.info("  Batch size = %d", args.batch_size)
+        print("***** Running evaluation *****")
+        print("  Num examples = ", len(eval_examples))
+        print("  Batch size = ", args.batch_size)
 
     label_list = processor.get_labels()
     # 返回的model_dn 是一个函数，其定义了模型，训练，评测方法，并且使用钩子参数，加载了BERT模型的参数进行了自己模型的参数初始化过程
